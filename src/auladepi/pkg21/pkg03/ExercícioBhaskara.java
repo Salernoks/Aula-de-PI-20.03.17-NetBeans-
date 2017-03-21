@@ -8,11 +8,11 @@ public class ExercícioBhaskara {
         
       //ENTRADAS
         System.out.print("x1: ");
-        double x1 = Double.parseDouble(leitor.nextLine());
+        double x1 = leitor.nextDouble();
         System.out.print("x2: ");
-        double x2 = Double.parseDouble(leitor.nextLine());
+        double x2 = leitor.nextDouble();
         System.out.print("c: ");
-        double c = Double.parseDouble(leitor.nextLine());
+        double c = leitor.nextDouble();
         
         //PROCESSAMENTO
         double s = x1 + x2;
