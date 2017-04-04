@@ -1,0 +1,39 @@
+package pkgswitch;
+ import java.util.Scanner;
+  public class CalculadoraComSwith {
+    public static void main (String [] args){
+        Scanner leitor = new Scanner(System.in);
+        
+        double n1, n2, r;
+        String operações;
+        
+        System.out.println("Calculadora");
+        System.out.print("Digite um número: ");
+        n1 = leitor.nextDouble();
+        
+        System.out.print("Digite outro número: ");
+        n2 = leitor.nextDouble();
+        System.out.println("Digite a operação (+ - * /): ");
+        operações = leitor.next();
+        switch(operações){
+            case"+":
+                r = n1 + n2;
+                System.out.println(r);
+                break;
+            case"-":
+                r = n1 - n2;
+                System.out.println(r);
+                break;
+            case"/":
+                r = n1 / n2;
+                System.out.println(r);
+                break;
+            case"*":
+                r = n1 * n2;
+                System.out.println(r);
+                break;
+            default:
+                System.out.println("Caracter inválido!");
+        }
+    }
+}
