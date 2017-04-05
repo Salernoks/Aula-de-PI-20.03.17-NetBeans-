@@ -1,0 +1,68 @@
+package pkgswitch;
+ import java.util.Scanner;
+   public class Salario {
+    public static void main (String [] args){
+        Scanner leitor = new Scanner (System.in);
+        
+        String nome;
+        double ht, vh, s;
+        int nvf;
+        
+        System.out.print("Digite o nome do funcionário: ");
+        nome = leitor.next();
+        
+        System.out.print("Digite as horas trabalhadas: ");
+        ht = leitor.nextDouble();
+        
+        System.out.print("Digite o nível do funcionário: ");
+        nvf = leitor.nextInt();
+        
+        switch(nvf){
+            case 1:
+                vh = 15;
+                s = ht * vh;
+                System.out.println("O funcionário "
+                        +nome+" trabalhou "
+                        +ht+" horas por R$ "
+                        +vh+" (Nível  "
+                        +nvf+")  deve receber R$ "+s);
+                 break;
+            case 2:
+                vh = 18;
+                s = ht * vh;
+                System.out.println("O funconário "
+                        +nome+ "trabalhou "
+                        +ht+" horas por R$ "
+                        +vh+" (Nível "
+                        +nvf+" ) e deve receber R$ "+s);
+                break;
+            case 3:
+                vh = 22;
+                s = ht * vh;
+                System.out.println("O funconário "
+                        +nome+ "trabalhou "
+                        +ht+" horas por R$ "
+                        +vh+" (Nível "
+                        +nvf+" ) e deve receber R$ "+s);
+                break;
+            case 4:
+                vh = 27;
+                s = ht * vh;
+                System.out.println("O funconário "
+                        +nome+ "trabalhou "
+                        +ht+" horas por R$ "
+                        +vh+" (Nível "
+                        +nvf+" ) e deve receber R$ "+s);
+                break;
+            case 5:
+                vh = 33;
+                s = ht * vh;
+                System.out.println("O funconário "
+                        +nome+ "trabalhou "
+                        +ht+" horas por R$ "
+                        +vh+" (Nível "
+                        +nvf+" ) e deve receber R$ "+s);
+                break;
+        }
+    }
+}
