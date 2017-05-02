@@ -1,0 +1,13 @@
+package ExercícioDaSala;
+ import java.util.Scanner;
+  public class tratamnetodeERRO {
+    public static void main (String [] args){
+    try{    
+         Scanner leitor = new Scanner(System.in);
+         System.out.println("Digite a temperatura: ");
+         double temp = Double.parseDouble(leitor.nextLine());
+    }catch (NumberFormatException ex) {
+        System.out.println("Temperatura inválida");
+    }
+  }
+}
